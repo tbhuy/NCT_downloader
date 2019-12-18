@@ -23,8 +23,8 @@ if __name__ == '__main__':
                 url = i.text.strip()
             elif i.tag == 'creator':
                 signer = i.text.strip()
-        print("Downloading file: "  title)
-        mp3file = "./" + title + " - "+ signer +".mp3"
+        print("Downloading file: " +  title)
+        mp3file = "./" + title + " - " + signer +".mp3"
         if isfile(mp3file):
             print("File exists")	
             continue
